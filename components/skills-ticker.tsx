@@ -15,27 +15,66 @@ const skills = [
   { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
 ]
 
+const categories = [
+  { label: "Languages", items: ["JavaScript", "Python", "Java", "C"] },
+  { label: "Frontend", items: ["HTML5", "CSS3", "Flutter"] },
+  { label: "Backend & DB", items: ["Node.js", "MySQL"] },
+  { label: "Tools", items: ["Git", "VS Code", "Linux"] },
+]
+
 export function SkillsTicker() {
   return (
-    <section className="overflow-hidden bg-[#1C1C1C] py-6">
-      <div className="flex animate-scroll-left items-center" style={{ width: "max-content" }}>
-        {/* Duplicate the list for seamless loop */}
-        {[...skills, ...skills].map((skill, i) => (
-          <div
-            key={`${skill.name}-${i}`}
-            className="mx-6 flex shrink-0 items-center gap-2"
-          >
-            <img
-              src={skill.logo || "/placeholder.svg"}
-              alt={skill.name}
-              className="h-7 w-7"
-              loading="lazy"
-            />
-            <span className="whitespace-nowrap text-base font-medium text-[#F5F1E8]">
-              {skill.name}
-            </span>
-          </div>
-        ))}
+    <section id="skills" className="bg-[#1C1C1C] px-8 py-14 md:px-16">
+      <div className="mx-auto max-w-5xl">
+        <h2 className="mb-2 text-3xl font-bold text-[#F2F2F2] sm:text-4xl">
+          Skills & Tools
+        </h2>
+        <p className="mb-8 text-sm text-[#F2F2F2]/50">
+          Technologies I work with
+        </p>
+
+        {/* Category pills */}
+        <div className="mb-8 flex flex-wrap gap-6">
+          {categories.map((cat) => (
+            <div key={cat.label}>
+              <span className="mb-2 block text-[10px] font-bold uppercase tracking-widest text-[#6F5E53]">
+                {cat.label}
+              </span>
+              <div className="flex flex-wrap gap-1.5">
+                {cat.items.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-md bg-[#F2F2F2]/8 px-2.5 py-1 text-xs font-medium text-[#F2F2F2]/80"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Scrolling ticker */}
+      <div className="overflow-hidden border-t border-b border-[#F2F2F2]/8 py-5">
+        <div className="flex animate-scroll-left items-center" style={{ width: "max-content" }}>
+          {[...skills, ...skills].map((skill, i) => (
+            <div
+              key={`${skill.name}-${i}`}
+              className="mx-6 flex shrink-0 items-center gap-2.5"
+            >
+              <img
+                src={skill.logo || "/placeholder.svg"}
+                alt={skill.name}
+                className="h-7 w-7"
+                loading="lazy"
+              />
+              <span className="whitespace-nowrap text-base font-medium text-[#F5F1E8]">
+                {skill.name}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
