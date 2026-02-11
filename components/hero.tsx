@@ -1,58 +1,54 @@
 "use client"
 
-import { ArrowDown, Download, Mail } from "lucide-react"
+import { ArrowDown } from "lucide-react"
 
 export function Hero() {
   return (
-    <section
-      id="hero"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden px-6"
-    >
-      {/* Subtle background glow */}
-      <div className="pointer-events-none absolute top-1/4 left-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
-
-      <div className="relative z-10 mx-auto max-w-3xl text-center">
-        <p className="mb-4 font-mono text-sm tracking-widest text-primary uppercase animate-fade-in-up">
-          Aspiring Web Developer
-        </p>
-        <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-          Renuka Palani
+    <section id="hero" className="flex min-h-screen flex-col md:flex-row">
+      {/* Left: Beige Panel */}
+      <div className="flex w-full flex-col justify-center bg-[#F5F1E8] px-8 py-24 md:w-3/5 md:px-16">
+        <h1 className="animate-float text-balance text-5xl font-bold tracking-tight text-[#2E2E2E] sm:text-6xl lg:text-7xl">
+          {"<RENUKA P>"}
         </h1>
-        <p className="mb-3 text-lg text-muted-foreground sm:text-xl animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-          Final-Year CSE Student
+        <h2 className="animate-float-slower mt-4 text-2xl font-medium text-[#2E2E2E]/80 sm:text-3xl lg:text-4xl">
+          Aspiring Web Developer
+        </h2>
+        <p className="mt-6 max-w-md text-base leading-relaxed text-[#2E2E2E]/60">
+          Final-year CSE student with a strong foundation in web technologies, building secure and scalable digital solutions.
         </p>
-        <p className="mx-auto mb-10 max-w-xl text-base leading-relaxed text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-          Developing secure, scalable and user-focused digital solutions.
-        </p>
-
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+        <div className="mt-8 flex flex-wrap gap-4">
           <a
-            href="#project"
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25"
+            href="https://drive.google.com/file/d/1nYzOewT4u_nvEZwB_pG-R2F3uB3037b9/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-md bg-[#6F5E53] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#5A4E43]"
+          >
+            Resume
+          </a>
+          <a
+            href="mailto:renukapalani048@gmail.com"
+            className="rounded-md bg-[#6F5E53] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#5A4E43]"
+          >
+            Contact
+          </a>
+          <a
+            href="#projects"
+            className="rounded-md border border-[#6F5E53]/30 bg-transparent px-6 py-3 text-sm font-semibold text-[#6F5E53] transition-colors hover:bg-[#6F5E53]/10"
           >
             View Projects
-            <ArrowDown className="h-4 w-4" />
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-lg border border-border bg-secondary px-6 py-3 text-sm font-semibold text-secondary-foreground transition-all hover:border-primary/50 hover:text-primary"
-          >
-            <Mail className="h-4 w-4" />
-            Contact Me
-          </a>
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 rounded-lg border border-border bg-transparent px-6 py-3 text-sm font-semibold text-muted-foreground transition-all hover:border-primary/50 hover:text-primary"
-          >
-            <Download className="h-4 w-4" />
-            Resume
           </a>
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-5 w-5 text-muted-foreground/50" />
+      {/* Right: Dark Panel */}
+      <div className="flex w-full flex-col items-center justify-center bg-[#1C1C1C] px-8 py-20 md:w-2/5 md:px-16">
+        <p className="max-w-xs text-center text-xl italic leading-relaxed text-[#F2F2F2] sm:text-2xl">
+          Building Secure and Scalable Digital Systems.
+        </p>
+        <div className="mt-10 flex flex-col items-center gap-3 text-[#F2F2F2]/40">
+          <span className="text-xs uppercase tracking-widest">Scroll</span>
+          <ArrowDown className="h-4 w-4 animate-bounce" />
+        </div>
       </div>
     </section>
   )

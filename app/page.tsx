@@ -1,13 +1,11 @@
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
-import { About } from "@/components/about"
-import { ProjectHighlight } from "@/components/project-highlight"
-import { OtherProjects } from "@/components/other-projects"
-import { Skills } from "@/components/skills"
+import { SkillsTicker } from "@/components/skills-ticker"
+import { Projects } from "@/components/projects"
+import { SystemLogs } from "@/components/system-logs"
+import { Education } from "@/components/education"
 import { Experience } from "@/components/experience"
 import { Contact } from "@/components/contact"
-import { Footer } from "@/components/footer"
-import { SectionDivider } from "@/components/section-divider"
 
 export default function Page() {
   return (
@@ -15,19 +13,13 @@ export default function Page() {
       <Navbar />
       <main>
         <Hero />
-        <SectionDivider />
-        <About />
-        <SectionDivider />
-        <ProjectHighlight />
-        <OtherProjects />
-        <SectionDivider />
-        <Skills />
-        <SectionDivider />
+        <SkillsTicker />
+        <Projects />
+        <SystemLogs />
+        <Education />
         <Experience />
-        <SectionDivider />
-        <Contact />
       </main>
-      <Footer />
+      <Contact />
     </>
   )
 }
