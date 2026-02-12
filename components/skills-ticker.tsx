@@ -1,11 +1,11 @@
 "use client"
 
 const skills = [
-  { name: "Flutter", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
-  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "Flutter", logo: "https://svglogos.vercel.app/flutter.svg" },
+  { name: "Node.js", logo: "https://svglogos.vercel.app/nodejs.svg" },
+  { name: "JavaScript", logo: "https://svglogos.vercel.app/javascript.svg" },
+  { name: "HTML5", logo: "https://svglogos.vercel.app/html.svg" },
+  { name: "CSS3", logo: "https://svglogos.vercel.app/css.svg" },
   { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
   { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
   { name: "C", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
@@ -44,7 +44,7 @@ export function SkillsTicker() {
                 {cat.items.map((item) => (
                   <span
                     key={item}
-                    className="rounded-md bg-[#F2F2F2]/8 px-2.5 py-1 text-xs font-medium text-[#F2F2F2]/80"
+                    className="rounded-md bg-[#F2F2F2]/8 px-2.5 py-1 text-xs font-medium text-[#F2F2F2]/80 transition-all duration-300 hover:bg-[#F2F2F2]/15 hover:text-[#F2F2F2]"
                   >
                     {item}
                   </span>
@@ -61,10 +61,10 @@ export function SkillsTicker() {
           {[...skills, ...skills].map((skill, i) => (
             <div
               key={`${skill.name}-${i}`}
-              className="mx-6 flex shrink-0 items-center gap-2.5"
+              className="mx-6 flex shrink-0 items-center gap-2.5 transition duration-300 hover:scale-110 hover:drop-shadow-lg"
             >
               <img
-                src={skill.logo || "/placeholder.svg"}
+                src={skill.logo}
                 alt={skill.name}
                 className="h-7 w-7"
                 loading="lazy"
