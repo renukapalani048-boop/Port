@@ -16,9 +16,10 @@ export function Hero() {
           <span className="text-xs font-medium text-[#6F5E53]">Open to opportunities</span>
         </div>
 
-        <h1 className="animate-float text-balance text-5xl font-bold tracking-tight text-[#2E2E2E] sm:text-6xl lg:text-7xl">
-          Renuka P
-        </h1>
+       <h1 className="animate-float text-balance text-5xl font-bold tracking-tight text-[#2E2E2E] sm:text-6xl lg:text-7xl">
+  RENUKA P
+</h1>
+
         <h2 className="animate-float-slower mt-4 text-2xl font-medium text-[#2E2E2E]/80 sm:text-3xl lg:text-4xl">
           Aspiring Web Developer
         </h2>
@@ -29,7 +30,7 @@ export function Hero() {
         {/* CTA Buttons */}
         <div className="mt-8 flex flex-wrap gap-4">
           <a
-            href="https://drive.google.com/file/d/1nYzOewT4u_nvEZwB_pG-R2F3uB3037b9/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1nYzOewT4u_nvEZwB_pG-R2F3uB3037b9/view"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-md bg-[#6F5E53] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#5A4E43]"
@@ -82,12 +83,6 @@ export function Hero() {
 
       {/* Right: Dark Panel */}
       <div className="flex w-full flex-col items-center justify-center bg-[#1C1C1C] px-8 py-20 md:w-2/5 md:px-16">
-        <div className="mb-8 font-mono text-xs text-[#F2F2F2]/30">
-          <p>{'// portfolio.config'}</p>
-          <p className="mt-1">{'{ theme: "minimal" }'}</p>
-          <p>{'{ focus: "security" }'}</p>
-          <p>{'{ status: "available" }'}</p>
-        </div>
         <p className="max-w-xs text-center text-xl italic leading-relaxed text-[#F2F2F2] sm:text-2xl">
           {'"Building Secure and Scalable Digital Systems."'}
         </p>

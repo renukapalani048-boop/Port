@@ -129,10 +129,9 @@ export function Projects() {
                   Govt. College of Engineering, Bodinayakanur
                 </p>
                 <p className="mb-4 text-sm leading-relaxed text-[#2E2E2E]/65">
-                  Secure QR-based digital leave & entry management system replacing
-                  manual approvals. Built for multi-role usage: students apply,
-                  wardens and principals approve, and gate security validates
-                  time-bound QR codes at entry/exit points.
+                  QR-based secure hostel leave and entry management system replacing
+                  manual approvals with multi-level authentication, real-time QR
+                  validation, and role-based authorization.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["Flutter", "Node.js", "MySQL", "ZXing", "OTP Auth", "RBAC"].map(
