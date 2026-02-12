@@ -83,12 +83,7 @@ export function Hero() {
 
       {/* Right: Dark Panel */}
       <div className="flex w-full flex-col items-center justify-center bg-[#1C1C1C] px-8 py-20 md:w-2/5 md:px-16">
-        <div className="mb-8 font-mono text-xs text-[#F2F2F2]/30">
-          <p>{'// portfolio.config'}</p>
-          <p className="mt-1">{'{ theme: "minimal" }'}</p>
-          <p>{'{ focus: "security" }'}</p>
-          <p>{'{ status: "available" }'}</p>
-        </div>
+        
         <p className="max-w-xs text-center text-xl italic leading-relaxed text-[#F2F2F2] sm:text-2xl">
           {'"Building Secure and Scalable Digital Systems."'}
         </p>
