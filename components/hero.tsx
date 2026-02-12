@@ -28,15 +28,6 @@ export function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="mt-8 flex flex-wrap gap-4">
-          <a
-            href="https://drive.google.com/file/d/1nYzOewT4u_nvEZwB_pG-R2F3uB3037b9/view"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-md bg-[#6F5E53] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#5A4E43]"
-          >
-            Resume
-          </a>
           <a
             href="mailto:renukapalani048@gmail.com"
             className="rounded-md bg-[#6F5E53] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#5A4E43]"
