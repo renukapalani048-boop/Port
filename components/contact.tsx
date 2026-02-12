@@ -60,26 +60,12 @@ export function Contact() {
                 <p className="text-[10px] font-bold uppercase tracking-wider text-[#2E2E2E]/40">
                   Phone
                 </p>
-                <a
-                  href="tel:+918248839603"
-                  className="text-sm font-medium text-[#6F5E53] underline transition-colors hover:text-[#5A4E43]"
-                >
-                  +91-8248839603
-                </a>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[#6F5E53]/10">
                 <MapPin className="h-4 w-4 text-[#6F5E53]" />
-              </div>
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-[#2E2E2E]/40">
-                  Location
-                </p>
-                <p className="text-sm font-medium text-[#2E2E2E]/70">
-                  Bangalore, India
-                </p>
               </div>
             </div>
           </div>
