@@ -16,9 +16,9 @@ export function Hero() {
           <span className="text-xs font-medium text-[#6F5E53]">Open to opportunities</span>
         </div>
 
-       <h1 className="animate-float text-balance text-5xl font-bold tracking-tight text-[#2E2E2E] sm:text-6xl lg:text-7xl">
-  RENUKA P
-</h1>
+        <h1 className="animate-float text-balance text-5xl font-bold tracking-tight text-[#2E2E2E] sm:text-6xl lg:text-7xl">
+          RENUKA P
+        </h1>
 
         <h2 className="animate-float-slower mt-4 text-2xl font-medium text-[#2E2E2E]/80 sm:text-3xl lg:text-4xl">
           Aspiring Web Developer
