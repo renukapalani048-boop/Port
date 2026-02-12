@@ -83,7 +83,6 @@ export function Hero() {
 
       {/* Right: Dark Panel */}
       <div className="flex w-full flex-col items-center justify-center bg-[#1C1C1C] px-8 py-20 md:w-2/5 md:px-16">
-        
         <p className="max-w-xs text-center text-xl italic leading-relaxed text-[#F2F2F2] sm:text-2xl">
           {'"Building Secure and Scalable Digital Systems."'}
         </p>
