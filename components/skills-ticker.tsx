@@ -1,18 +1,38 @@
 "use client"
 
-const skills = [
-  { name: "Flutter", logo: "https://svglogos.vercel.app/flutter.svg" },
-  { name: "Node.js", logo: "https://svglogos.vercel.app/nodejs.svg" },
-  { name: "JavaScript", logo: "https://svglogos.vercel.app/javascript.svg" },
-  { name: "HTML5", logo: "https://svglogos.vercel.app/html.svg" },
-  { name: "CSS3", logo: "https://svglogos.vercel.app/css.svg" },
-  { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-  { name: "C", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
-  { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-  { name: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-  { name: "Linux", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
-  { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+import {
+  SiFlutter,
+  SiNodedotjs,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiPython,
+  SiMysql,
+  SiC,
+  SiJava,
+  SiVisualstudiocode,
+  SiLinux,
+  SiGit,
+} from "react-icons/si"
+
+interface Skill {
+  name: string
+  icon: React.ReactNode
+}
+
+const skills: Skill[] = [
+  { name: "Flutter", icon: <SiFlutter /> },
+  { name: "Node.js", icon: <SiNodedotjs /> },
+  { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "HTML5", icon: <SiHtml5 /> },
+  { name: "CSS3", icon: <SiCss3 /> },
+  { name: "Python", icon: <SiPython /> },
+  { name: "MySQL", icon: <SiMysql /> },
+  { name: "C", icon: <SiC /> },
+  { name: "Java", icon: <SiJava /> },
+  { name: "VS Code", icon: <SiVisualstudiocode /> },
+  { name: "Linux", icon: <SiLinux /> },
+  { name: "Git", icon: <SiGit /> },
 ]
 
 const categories = [
@@ -63,12 +83,9 @@ export function SkillsTicker() {
               key={`${skill.name}-${i}`}
               className="mx-6 flex shrink-0 items-center gap-2.5 transition duration-300 hover:scale-110 hover:drop-shadow-lg"
             >
-              <img
-                src={skill.logo}
-                alt={skill.name}
-                className="h-7 w-7"
-                loading="lazy"
-              />
+              <div className="flex h-8 w-8 items-center justify-center text-[#6F5E53]">
+                {skill.icon}
+              </div>
               <span className="whitespace-nowrap text-base font-medium text-[#F5F1E8]">
                 {skill.name}
               </span>
